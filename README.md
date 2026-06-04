@@ -85,7 +85,7 @@ Scroll to the absolute bottom of the file and append this single configuration l
 Plaintext
 
 ```Bash
-//192.168.1.100/Shared-Backups  /mnt/network-storage  cifs  credentials=/home/sysadmin/.smbcredentials,iocharset=utf8,uid=1000,gid=1000  0  0
+//192.168.1.100/Shared-Backups  /mnt/network-storage  cifs  credentials=/root/sysadmin/.smbcredentials,iocharset=utf8,uid=1000,gid=1000  0  0
 ```
 
 #### Breaking Down the Configuration Parameters:
