@@ -111,3 +111,15 @@ sudo mount -a
 ```
 
 _If the command runs silently without throwing errors, your tunnel is live!_
+
+### Verification: Testing Your Success
+
+To prove that the files are streaming over the network successfully, run a list directory command on your local folder:
+
+Bash
+
+```Bash
+ls -l /mnt/network-storage
+```
+
+You will instantly see all the files and folders hosted on the remote computer sitting right inside your Linux terminal. If the server undergoes an unannounced power failure or a manual reboot, it will execute this handshake entirely on its own the moment it wakes up!
