@@ -19,3 +19,14 @@ Imagine you have a central headless Linux server, and you want it to store backu
 If you just connect to it temporarily, the connection breaks the second there is a power cut or a system reboot. To fix this, we use two massive Linux building blocks:
 1. **Samba/CIFS:** The communication protocol that allows Linux and Windows systems to talk and share folders over a local network.
 2. **`/etc/fstab` (File System Table):** A powerful configuration registry inside the Linux kernel that mounts storage devices automatically the moment the operating system boots up.
+
+## Step-by-Step Deployment Guide
+
+### Step 1: Install the Necessary Network Utilities
+By default, a clean Ubuntu Server doesn't know how to parse Windows filesystems. We need to install the core CIFS tools first. 
+
+Connect to your server via SSH and run:
+
+```bash
+sudo apt update
+sudo apt install cifs-utils -y
