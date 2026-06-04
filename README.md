@@ -123,3 +123,10 @@ ls -l /mnt/network-storage
 ```
 
 You will instantly see all the files and folders hosted on the remote computer sitting right inside your Linux terminal. If the server undergoes an unannounced power failure or a manual reboot, it will execute this handshake entirely on its own the moment it wakes up!
+
+
+#### Note: 
+1. Whenever you change your Windows Login credentials. You **MUST** update the `./smbcredentials` in the **root** user where the file is located. 
+   
+
+~By Alexander Muthua. 
