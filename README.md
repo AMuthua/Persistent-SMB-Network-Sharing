@@ -99,3 +99,15 @@ Plaintext
 - **`credentials=...`**: Points directly to our hidden, locked-down password file.
 
 - **`uid=1000,gid=1000`**: Tells Linux that your local user account owns these files, preventing annoying "Permission Denied" errors when reading or writing data.
+
+### Step 5: Test and Execute the Live Pipeline
+
+You don't need to reboot your server to check if your configuration works. You can force the operating system to parse the `/etc/fstab` file immediately by running:
+
+Bash
+
+```Bash
+sudo mount -a
+```
+
+_If the command runs silently without throwing errors, your tunnel is live!_
