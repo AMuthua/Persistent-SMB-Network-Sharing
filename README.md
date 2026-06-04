@@ -28,5 +28,17 @@ By default, a clean Ubuntu Server doesn't know how to parse Windows filesystems.
 Connect to your server via SSH and run:
 
 ```bash
+
 sudo apt update
 sudo apt install cifs-utils -y
+
+```
+
+### Step 2: Create a Local Injection Point (The Mount Folder)
+We need a standard directory inside our Linux filesystem where the remote network files will physically appear. We will create this inside the `/mnt` directory:
+
+```bash
+
+sudo mkdir -p /mnt/network-storage
+
+```
