@@ -14,7 +14,7 @@ Instead of copying files manually or losing your connection every time your serv
 
 ## The Core Concept: What Are We Solving?
 
-Imagine you have a central headless Linux server, and you want it to store backups or access files located on another machine specifically Windows across the room. 
+Imagine you have a central headless Linux server, and you want it to store backups or access files located on another machine specifically Windows on your network. 
 
 If you just connect to it temporarily, the connection breaks the second there is a power cut or a system reboot. To fix this, we use two massive Linux building blocks:
 1. **Samba/CIFS:** The communication protocol that allows Linux and Windows systems to talk and share folders over a local network.
